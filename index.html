@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="Portfolio Timothy Brandt - Development and Design">
+    <meta property="og:type" content="Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timothy Brandt | Designer and Developer</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="shapes.css">
+    <meta property="og:url" content="https://timothybrandt.de">
+    <meta name="author" content="Timothy Brandt">
+    <meta property="og:description" content="This site is my portfolio where Timothy Brandt shows his recent design and development projects he has finished. Additionally this website shows his most interesting hobby photography and the best results of it">
+    <meta name="designer" content="Timothy Brandt">
+   
+    <meta name="keywords" content="Timothy Brandt,Timothy, Brandt, Frontend, Developer, Gamedeveloper, Designer, webdesigner, minimalism, Germany, Magdeburg, codingtim, Entwickler">
+</head>
+<body>
+    
+        <div class="header">
+            <div class="sticky" id="navbar">
+                <div class="name"> <a href="/">Timothy Brandt</a> </div>
+                <ul>
+                    
+                    <li class="nav home">
+                        <a href="/" onclick="resizenav()">Home</a>
+                    </li>
+                    <li class="nav journey">
+                        <a  onclick="scrolldiv('card_one', 200)" >My Journey</a>
+                    </li>
+                    <li class="nav projects">
+                        <a  onclick="scrolldiv('projects', 0)" >My Projects</a>
+                    </li>
+                    
+                </ul>
+                <form >
+                    <button  onclick="scrolldiv('hire', 200)" class="hire_but" type="button" title="Hire me!">
+                        <p onclick="resizenav()">Hire me!</p>
+                        </button>
+                </form>
+                    
+
+                <a  class="icon" onclick="scaleNav()"><img src="icons/RespIcon.png"></a>
+                <a  class="close" onclick="resizenav()"><img src="icons/close.png"></a>
+            </div>
+        </div>
+        
+    <div class="card">
+        <div class="portrait">
+            <img src="img/portrait_timothy.jpg" alt="portrait timothy brandt">
+        </div>
+        <div class="card_text">
+            <p id="card_headline">
+                <span id="bracket">[</span> <span id="hey">Hey</span> there <span id="bracket">]</span>
+            </p>
+            <p id="card_undertext">
+                My name is Timothy and welcome to my portfolio about my recent projects -
+            </p>
+        </div>
+        
+    </div>
+    
+    <div class="ic_arrow" onclick="scrolldiv('introtext', 150)" >
+        <div class="arrow" id="arrow" >
+
+        </div>
+    </div>
+    <div class="introduction-field">
+        <div class="intro-text-field" id="introtext">
+            <p id="text_headline">
+                What this website is about
+               </p>
+               <p id="text">
+                I've been programming for 6 years now. Developing games and websites and designing them became my passion over the last couple of years. Besides the programming part I love to take portraits and I am very interested in street photography. This website shows my experiences and projects of the latest months and years in webdevelopment and gamedesign. I also show some of my best shots in street photography. Take a look at my little introduction into my personality and life and get in contact with me, if you are interested in talking with me.
+               </p>
+        </div>
+       <div class="seccard dev" id="card_one">
+           <div id="seccard-text">
+               <p>Development</p>
+           </div>
+           <button class="secbut-dev" onclick="window.location.href='/journey'">
+               More about
+           </button>
+       </div>
+       <div class="seccard photo" id="card_two">
+        <div id="seccard-text">
+            <p>Photography</p>
+        </div>
+        <button class="secbut-photo" onclick="window.location.href='/photography'">
+            More about
+        </button>
+        </div>
+        
+    </div>
+    
+  
+    <div class="projects-field" id="projects">
+       
+        <p id="projects_headline">
+            My published projects
+        </p>
+        <div class="projects-card w11">
+            <div id="project-cover">
+                <img src="img/project_w11.png" alt="">
+            </div>
+
+            <p id="project_headline">
+                Wagenhalle 11 e.V.
+            </p>
+            <p id="description">
+
+                This website is actually an information site for people who are interested in art. Giving a small group of young students having a website and represent their work on it made me quite happy.
+
+            </p>
+            <form action="https://wagenhalle11.de" >
+                <button id="project_but">
+                    <p>Visit</p>
+                 </button>
+            </form>
+            
+        </div>
+    </div>
+    <div class="hire-field" id="hire">
+        <p id="hire_headline">
+            Hire me!
+        </p>
+        <p id="hire-description">
+            If you have an idea in design or development and don’t know how to realize it, get in contact with me! 
+        </p>
+        
+        <div id="hire-button">
+            <a href="https://mailto:tmth.brandt@gmail.com">Write me an E-Mail</a>  
+        </div>
+       
+           
+        
+        
+    </div>
+    <div class="aboutme">
+        <div class="abouttext" id="aboutme">
+            <p id="about_headline">Hi that's me!</p>
+            <p id="about_text">I am 19 years old, from Germany and still at school visiting the 13th grade. Since the 5th grade I am very interested in technology and development and started with block development.
+            </p>
+            <p id="about_text">In the 5th grade I started with developing robots for competitions and learnt the basics of development. For 5 years I have been participating in these competitions. After graduating at that school I stayed there and became the teacher of the programming course. At the moment I teach pupils at the age of 12 to 16 how the world of the computer science works and give them access to the basics but also more advanced techniques of development in python.
+            </p>
+            <p id="about_text">This woke up different interests in me and I got fascinated about the huge spread and influence of development in all parts of life. My focus went to webdesign and webdevelopment during the latest years. However gamedesign is still a huge part of my creating.</p>
+        </div>
+        <div id="aboutimg">
+            <img src="img/timothybrandt.jpg" alt="timothy brandt portrait">
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer-contact">
+                <ul >
+                    <li>
+                        <p> Get in contact with me</p>
+                    </li>
+                    <li><a href="https://mailto:tmth.brandt@gmail.com" target="_top">E-Mail</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <ul >
+                    <li><p>Links</p></li>
+                    <li><a target="_blank" href="https://unsplash.com/@timothybrandt">Unsplash</a></li>
+                    <li><a target="_blank" href="https://instagram.com/codingtim">Instagram</a></li>
+                    <li> <a target="_blank" href="https://github.com/codingtim-dev">Github</a></li>
+                </ul>
+            </div>
+            <div class="footer-impressum">
+                <ul >
+                    <li><p>Other</p></li>
+                    <li >
+                        <a href="impressum/">Impressum</a>
+                    </li>
+                    <li> <a href="">&#169 2021 timothybrandt.de</a> </li>
+                </ul>
+            </div>
+            
+            
+            
+              
+        </div>
+    </footer>
+    <script src="header.js"></script>
+    <script src="fadeIn.js"></script> 
+    <script src="shapeanim.js"></script>
+</body>
+</html>

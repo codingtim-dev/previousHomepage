@@ -1,0 +1,21 @@
+
+
+.ball {
+    position: absolute;
+    
+    border-radius: 100%;
+    opacity: 0.8;
+
+   
+  }
+
+.ballcontainer{
+    position: relative;
+    height: 3000px;
+    width: 100%;
+    
+  overflow: hidden;
+   
+    
+}
+

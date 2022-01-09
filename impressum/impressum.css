@@ -1,0 +1,16 @@
+.impressum{
+    margin-top: 10%;
+    padding: 5% 10%;
+
+    font-family: Barlow;
+}
+
+@media only screen and (max-width: 800px){
+    .impressum{
+        margin-top: 15%;
+    }
+}
+
+.impressum p {
+    font-family: Barlow;
+}

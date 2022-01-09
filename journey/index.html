@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey | Timothy Brandt</title>
+    <link rel="stylesheet" href="/master.css">
+    <link rel="stylesheet" href="journey.css">
+    <link rel="stylesheet" href="/shapes.css">
+
+    <meta property="og:title" content="Portfolio Timothy Brandt - Development and Design">
+    <meta property="og:type" content="Website">
+    <meta property="og:url" content="https://timothybrandt.de">
+    <meta name="author" content="Timothy Brandt">
+    <meta property="og:description" content="This site is my portfolio where I am showing my recent design and development projects I have finished. Additionally this website shows my most interesting hobby photography and the best results of it">
+    <meta name="designer" content="Timothy Brandt">
+   
+    <meta name="keywords" content="Timothy Brandt, Frontend, Developer, Gamedeveloper, Designer, webdesigner, minimalism, Germany, Magdeburg, codingtim, Entwickler">
+   
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="sticky" id="navbar">
+                <div class="name"><a href="/">Timothy Brandt</a>  </div>
+                <ul>
+                    
+                    <li class="nav home">
+                        <a href="/" onclick="resizenav()">Home</a>
+                    </li>
+                    <li class="nav journey">
+                        <a href="" onclick="resizenav()">My Journey</a>
+                    </li>
+                    <li class="nav projects">
+                        <a href="/"onclick="resizenav()">My Projects</a>
+                    </li>
+                    
+                </ul>
+                <form >
+                    <button onclick="scrolldiv('hire', 150)" class="hire_but" type="button" title="Hire me!" onclick="resizenav()">
+                    <p class="hire_but_txt" onclick="resizenav()">Hire me!</p>
+                    </button>
+                </form>
+
+                <a  class="icon" onclick="scaleNav()"><img src="/icons/RespIcon.png"></a>
+                <a  class="close" onclick="resizenav()"><img src="/icons/close.png"></a>
+            </div>
+        </div>
+        
+    </header>
+    <div class="develop-intro">
+        <p id="develop_headline">
+            Development
+        </p>
+        <p id="develop_text">
+            My development jouney started at my secondary school 6 years ago when I had participated in a robotic course. After a few years my interests swtiched over to webdevelopment and gamedevelopment. 
+        </p>
+        <p id="develop_text">
+            However I tried out a lot of other programming stuff like developing apps or automation boring things in life. During the pandemic I've grown up a huge interest in data science and deep learning, so I participated in an university course and received a certificate for my knowledge in machine learning.
+        </p>
+    </div>
+    <div class="aside">
+        <model-viewer auto-rotate camera-orbit="45deg 70deg 30m" loading="eager"  ar animation-name="Run" src="3dobjects/astronaut.gltf" shadow-intensity="1" alt="VR Headset"  ar ios-src="3dobjects/astronaut.gltf"></model-viewer>
+    </div>
+
+    <div class="skills">
+        <div class="skill_headline">
+            <p>My Skills</p>
+        </div>
+        <div class="skill-wrapper" id="skill1">
+            <div class="skillname">
+                <p id="skill_name">Python</p>
+            </div>
+            <div class="progress">
+                <div class="percent full"></div>
+            </div>
+            <div class="steps">
+                <div class="step" id="finished">
+                    <div class="tick">
+                        <img src="tick.png" alt="">
+                    </div>
+                    
+                </div>
+                <div class="step" id="finished">
+                    <div class="tick">
+                        <img src="tick.png" alt="">
+                    </div>
+                </div>
+                <div class="step" id="finished">
+                    <div class="tick">
+                        <img src="tick.png" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="values">
+                <p>Beginner</p>
+                <p>Intermediate</p>
+                <p>Expert</p>
+            </div>
+        </div>
+
+        <div class="skill-wrapper" id="skill2">
+            <div class="skillname">
+                <p id="skill_name">Blender</p>
+            </div>
+            <div class="progress">
+                <div class="percent full"></div>
+            </div>
+            <div class="steps">
+                <div class="step" id="finished">
+                    <div class="tick">
+                        <img src="tick.png" alt="">
+                    </div>
+                </div>
+                <div class="step" id="finished">
+                    <div class="tick">
+                        <img src="tick.png" alt="">
+                    </div>
+                </div>
+                <div class="step" id="finished">
+                    <div class="tick">
+                        <img src="tick.png" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="values">
+                <p>Beginner</p>
+                <p>Intermediate</p>
+                <p>Expert</p>
+            </div>
+        </div>
+        <div class="skill-wrapper" id="skill3">
+            <div class="skillname">
+                <p id="skill_name">Affinity</p>
+            </div>
+            <div class="progress">
+                <div class="percent mid" ></div>
+            </div>
+            <div class="steps">
+                <div class="step" id="finished" title="Beginner">
+                    <div class="tick">
+                        <img src="tick.png" alt="">
+                    </div>
+                </div>
+                <div class="step" id="finished" title="Intermediate">
+                    
+                    <div class="tick">
+                        <img src="tick.png" alt="">
+                    </div>
+                </div>
+                <div class="step" id="uncompleted" title="Expert">
+                    <div class="tick">
+                        <img src="tick.png" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="values">
+                <p>Beginner</p>
+                <p>Intermediate</p>
+                <p>Expert</p>
+            </div>
+        </div>
+        <div class="skill-wrapper" id="skill4">
+            <div class="skillname">
+                <p id="skill_name">C#</p>
+            </div>
+            <div class="progress">
+                <div class="percent mid" ></div>
+            </div>
+            <div class="steps">
+                <div class="step" id="finished" title="Beginner">
+                    <div class="tick">
+                        <img src="tick.png" alt="">
+                    </div>
+                    
+                    
+                </div>
+                <div class="step" id="finished" title="Intermediate">
+                    
+                    <div class="tick">
+                        <img src="tick.png" alt="">
+                    </div>
+                   
+                </div>
+                <div class="step" id="uncompleted" title="Expert">
+                    <div class="tick">
+                        <img src="tick.png" alt="">
+                    </div>
+                    
+                </div>
+
+
+            </div>
+            <div class="values">
+                <p>Beginner</p>
+                <p>Intermediate</p>
+                <p>Expert</p>
+            </div>
+        </div>
+        <div class="skill-wrapper" id="skill5">
+            <div class="skillname">
+                <p id="skill_name">JavaScript</p>
+            </div>
+            <div class="progress">
+                <div class="percent mid" ></div>
+            </div>
+            <div class="steps">
+                <div class="step" id="finished" title="Beginner">
+                    <div class="tick">
+                        <img src="tick.png" alt="">
+                    </div>
+                    
+                    
+                </div>
+                <div class="step" id="finished" title="Intermediate">
+                    
+                    <div class="tick">
+                        <img src="tick.png" alt="">
+                    </div>
+                   
+                </div>
+                <div class="step" id="uncompleted" title="Expert">
+                    <div class="tick">
+                        <img src="tick.png" alt="">
+                    </div>
+                    
+                </div>
+
+
+            </div>
+            <div class="values">
+                <p>Beginner</p>
+                <p>Intermediate</p>
+                <p>Expert</p>
+            </div>
+        </div>
+    </div>
+    <div class="hire-field" id="hire">
+        <p id="hire_headline">
+            Hire me!
+        </p>
+        <p id="hire-description">
+            If you have an idea in design or development and don’t know how to realise it, get in contact with me! 
+        </p>
+        <div id="hire-button">
+            <a href="mailto:tmth.brandt@gmail.com">Write me an E-Mail</a>  
+        </div>
+        
+    </div>
+
+    <div class="insights">
+        <div id="insights_headline">
+            <p>Insights</p>
+        </div>
+        <div class="image-flex-view">
+            <ul>
+                <li>
+                    <img src="/img/Desert.png" alt="gamedevelopment timothybrandt">
+                </li>
+                <li>
+                    <img src="/img/frame3.png" alt="gamedevelopment timothybrandt">
+                </li>
+                <li>
+                    <img src="/img/project_w11.png" alt="gamedevelopment timothybrandt">
+                </li>
+                <li>
+                    <img src="/img/astronaut_alpha.png" alt="gamedevelopment timothybrandt">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer-contact">
+                <ul >
+                    <li>
+                        <p> Get in contact with me</p>
+                    </li>
+                    <li><a href="https://mailto:tmth.brandt@gmail.com" target="_top">E-Mail</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <ul >
+                    <li><p>Links</p></li>
+                    <li><a target="_blank" href="https://unsplash.com/@timothybrandt">Unsplash</a></li>
+                    <li><a target="_blank" href="https://instagram.com/codingtim">Instagram</a></li>
+                    <li> <a target="_blank" href="https://github.com/codingtim-dev">Github</a></li>
+                </ul>
+            </div>
+            <div class="footer-impressum">
+                <ul >
+                    <li><p>Other</p></li>
+                    <li >
+                        <a href="/impressum/">Impressum</a>
+                    </li>
+                    <li> <a href="">&#169 2021 timothybrandt.de</a> </li>
+                </ul>
+            </div>
+            
+            
+            
+              
+        </div>
+    </footer>
+   <script src="/shapeanim.js"></script>
+  <script src="/header.js"></script>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</body>
+</html>

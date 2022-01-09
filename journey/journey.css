@@ -1,0 +1,607 @@
+.develop-intro{
+    margin-top: 20px;
+    
+    width: 65%;
+    padding: 2% 0% 2%  10%;
+    opacity: 1;
+
+    
+}
+
+
+#develop_headline{
+    font-family: Rajdhani;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#develop_text{
+   
+    font-family: Rajdhani;
+    font-weight: 500;
+    font-size: 18px;
+    width: 70%;
+
+    
+
+}
+
+.aside{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 20%;
+    right: 10%;
+}
+
+
+.aside model-viewer{
+    height: 600px;
+    width: 600px;
+    border: none;
+}
+
+@media only screen and (max-width: 1360px){
+    .aside{
+        right: 5%;
+        width: 400px;
+        height: 400px;
+    }
+
+    .aside model-viewer{
+        height: 400px;
+        width: 400px;
+        
+    } 
+}
+
+@media only screen and (max-width: 900px){
+    .develop-intro{
+        
+        padding: 2% 10%;
+        width: 80%;
+    }
+
+    .aside{
+        right: 5%;
+        width: 300px;
+        height: 300px;
+    }
+
+    .aside model-viewer{
+        height: 300px;
+        width: 300px;
+        
+    }
+
+
+}
+
+@media only screen and (max-width: 580px){
+    .develop-intro{
+        margin-top: 0;
+        padding: 0% 10% ;
+        width: 100%;
+    }
+
+    #develop_text{
+        width: 100%;
+    }
+
+    .aside{
+        position: relative;
+        right: 0%;
+        width: 100%;
+        height: 300px;
+    }
+
+    .aside model-viewer{
+        height: 300px;
+        width: 100%;
+        
+    }
+}
+
+.skills{
+    position: relative;
+    height: 800px;
+    width: 100%;
+    padding: 0% 10%;
+    margin-top: 25%;
+}
+
+.skill_headline p {
+    font-family: Rajdhani;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.skill-wrapper{
+    position: absolute;
+    
+    width: 70%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: unscaleSkill .5s ease-in-out forwards;
+
+}
+
+.skill-wrapper:hover{
+    animation: scaleSkill forwards .5s ease-in-out;
+}
+
+@keyframes scaleSkill{
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.1);
+    }
+}
+
+@keyframes unscaleSkill{
+    from{
+        transform: scale(1.1);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 900px){
+
+    .skill-wrapper{
+        width: 80%;
+        top: 5%;
+    }
+
+    #skill1{
+        top: 5%  ;
+    }
+    
+    #skill2{
+       top: 15%;
+    }
+    
+    #skill3{
+        top: 25%;
+    }
+    
+    #skill4{
+        top:35%;
+    }
+
+    
+    
+}
+
+@media only screen and (max-width: 580px){
+    .skills{
+        height: 600px;
+    }
+}
+
+#skill1{
+    margin-top: 2%  ;
+}
+
+#skill2{
+    margin-top: 12%;
+}
+
+#skill3{
+    margin-top: 22%;
+}
+
+#skill4{
+    margin-top:32%;
+}
+
+#skill5{
+    margin-top: 42%;
+}
+
+.skillname{
+    position: absolute;
+
+    width: 12%;
+    left: 5%;
+    height: 50%;
+    top: 18%;
+    text-align: center;
+    z-index: 2;
+
+  
+
+}
+
+#skill_name{
+    background-color: #62DCA1;
+    font-size: 23px;
+    font-family: Rajdhani;
+    font-weight: 600;
+    color: white;
+    border-radius: 15px;
+}
+
+.steps{
+    position: relative;
+    display: flex;
+    left: 20%;
+    justify-content: space-between;
+    width: 70%;
+    height: 120px;
+    
+    
+
+}
+
+.step{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 50%;
+    transition: background 1s;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+}
+
+@media only screen and (max-width: 1360px){
+    .skillname{
+        
+        width: 15%;
+       
+    }
+
+    .steps{
+        height: 110px;
+        left: 30%;
+        width: 60%;
+}
+
+    #skill1{
+        margin-top: 5%  ;
+    }
+    
+    #skill2{
+        margin-top: 25%;
+    }
+    
+    #skill3{
+        margin-top: 45%;
+    }
+    
+    #skill4{
+        margin-top:65%;
+    }
+
+    #skill5{
+        margin-top: 85%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+
+    .skillname{
+        top: 15%;
+        width: 20%;
+       
+    }
+
+    .steps{
+            height: 110px;
+            left: 30%;
+            width: 60%;
+    }
+
+    #skill1{
+        margin-top: 5%  ;
+    }
+    
+    #skill2{
+        margin-top: 15%;
+    }
+    
+    #skill3{
+        margin-top: 25%;
+    }
+    
+    #skill4{
+        margin-top:35%;
+    }
+
+    #skill5{
+        margin-top: 45%;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    .skillname{
+        width: 27%;
+        top: 8%;
+    }
+
+    #skill_name{
+        line-height: 32px;
+        font-size: 18px;
+    }
+
+    .steps{
+        height: 80px;
+        left: 40%;
+        width: 40%
+    }
+
+    .step{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.values{
+    
+    position: absolute;
+    top: 65%;
+    left: 19%;
+    display: flex;
+    justify-content: space-between;
+    width: 71%;
+    margin: auto;
+   
+}
+
+.values p {
+    text-align: center;
+    width: auto;
+    font-family: Rajdhani;
+    display: inline-block;
+
+    font-weight: 500;
+
+}
+
+.step p{
+    text-align: center;
+    font-family: Barlow;
+}
+
+.step:hover{
+    cursor: pointer;
+    animation: scaleStep .7s ease-in-out forwards;
+}
+
+
+@keyframes scaleFullStep{
+    from{
+        transform: scale(1);
+        transform: translateY(-50%);
+        
+    }
+    to{
+        transform: scale(1.1) translateY(-50%);
+        
+    }
+}
+
+
+
+
+
+#finished{
+    background-color: #62DCA1;
+
+}
+#uncompleted{
+    background-color: rgb(201, 201, 201);
+}
+
+.progress{
+    
+    position: absolute;
+    width: 72%;
+    left: 15%;
+    height: calc(50% + 5px);
+    /*border-bottom: 10px solid #62DCA1; */
+    z-index: 0;
+    
+
+    
+}
+
+
+
+
+
+.skill3 #step2{
+    background-color: grey;
+}
+
+
+
+.percent{
+    position: absolute;
+    
+    height: 100%;
+    border-bottom: 10px solid #62DCA1; 
+    z-index: 2;
+
+    
+}
+
+@media only screen and (max-width: 1360px){
+    .values{
+        width: 63%;
+        left: 28%;
+    }
+
+    .progress{
+        left: 19%;
+        width: 71%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+
+    .progress{
+        left: 20%;
+        width: 67%;
+    }
+
+    .values{
+        width: 63%;
+        left: 28%;
+    }
+
+
+}
+
+@media only screen and (max-width: 580px){
+    .progress{
+        left: 30%;
+        width: 47%;
+    }
+
+    .values{
+        display: none;
+    }
+
+    #skill1{
+        margin-top: 10%  ;
+    }
+    
+    #skill2{
+        margin-top: 25%;
+    }
+    
+    #skill3{
+        margin-top: 40%;
+    }
+    
+    #skill4{
+        margin-top:55%;
+    }
+
+    #skill5{
+        margin-top: 70%;
+    }
+}
+
+.full{
+    animation: scaleProgressFull 2s ease-in-out forwards;
+}
+
+.mid{
+    animation: scaleProgressMid 2s  ease-in-out forwards;
+}
+
+@keyframes scaleProgressFull{
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes scaleProgressMid{
+    from{
+        width: 0;
+    }
+    to{
+        width: 55%;
+    }
+}
+
+@keyframes scaleWidth{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+.tick{
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.tick img{
+    top: 20%;
+    position: relative;
+    left: 20%;
+    width: 60%;
+}
+
+@media only screen and (max-width: 500px){
+
+    .tick{
+        width: 100%;
+        height: 100%;
+    }
+
+    .tick img{
+        width: 40%;
+        left: 30%;
+        top: 20%;
+    }
+    
+}
+
+.insights{
+    position: relative;
+    
+    margin-top: 20%;
+
+}
+
+#insights_headline{
+    margin-left: 10%;
+    font-family: Rajdhani;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.image-flex-view{
+    margin: 5% 0;
+}
+
+.image-flex-view ul{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    
+    flex-wrap: wrap;
+    
+    list-style-type: none;
+}
+
+.image-flex-view li{
+    
+   
+    width: 50%;
+   display: inline-block;
+}
+
+@media only screen and (max-width: 580px){
+    .image-flex-view li{
+        width: 100%;
+    }
+}
+
+.image-flex-view img{
+    max-width: 100%;
+    max-height: 100%;
+    
+    vertical-align: bottom;
+
+    transition: all ease-in-out .5s;
+}
+
